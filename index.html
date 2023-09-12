@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Practica del 04 de Septiembre</title>
 </head>
 <body>
 
-    <h1>Formulario HTML</h1>
+    <header>
+        <h1>Formularios HTML</h1>
+    </header>
+
+    <main>
+        <form action="" method="post">
+            <div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre">
+            </div>
     
-    <form action="" method="get">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-        </div>
-
-        <div>
-            <label for="colorfav">colorfav</label>
-            <input type="color" name="colorfav" id="colorfav">
-        </div>
-
-        <div>
-            <label for="fecha">fecha</label>
-            <input type="date" name="fecha" id="fecha">
-        </div>
-
-        <div>
-            <label for="password">password</label>
-            <input type="password" name="password" id="password">
-        </div>
-
-        <div>
-            <label for="semestre">password</label>
-            <input type="range" name="semestre" id="semestre">
-        </div>
-
-        <div>
-            <label for="area">comentario</label>
-            <textarea name="area" id="area" cols="30" rows="10"></textarea>        
-        </div>
-
-        <div>
-            <label for="archivo">archivo</label>
-            <input type="file" name="archivo" id="archivo">
-        </div>
-
-
-        <input type="button" value="enviar">
-        <button>enviar</button>
-        <input type="submit" value="enviar">
-        <input type="reset" value="enviar">
-        <a href="#">enviar</a>
- 
-    </form>
+            <div>
+                <label for="colorFav">Color favorito:</label>
+                <input type="color" name="colorFav" id="colorFav">
+            </div>
     
+            <div>
+                <label for="FechaNac">Fecha Nacimiento:</label>
+                <input type="date" name="FechaNac" id="FechaNac">
+            </div>
+    
+            <div>
+                <label for="Clave">Password:</label>
+                <input type="password" name="Clave" id="Clave">
+            </div>
+    
+            <div>
+                <label for="semestre">Semestre:</label>
+                <input type="range" min="1" max="9" name="semestre" id="semestre">
+            </div>
+    
+            <div>
+                <label for="Comentarios">Comentarios:</label>
+                <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div>
+                <label for="Curriculum">Curriculum:</label>
+                <input type="file" name="Curriculum" id="Curriculum">
+            
+            <div>
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso">
+                    <option value="1">Python</option>
+                    <option value="2">Cobol</option>
+                    <option value="3">C#</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso" multiple>
+                    <option value="1">Python</option>
+                    <option value="2">Cobol</option>
+                    <option value="3">C#</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso">
+                    <optgroup label="En línea">
+                         <option value="1">Python</option>
+                    </optgroup>
+                   
+                    <optgroup label="Presencial">
+                        <option value="2">Cobol</option>
+                        <option value="3">C#</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <input type="button" value="Guardar">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <button>Enviar</button>
+            <a href="#">Enviar</a>
+    
+        </form>
+    </main>    
+    
+    <aside></aside>
+    <footer></footer>
 </body>
 </html>
